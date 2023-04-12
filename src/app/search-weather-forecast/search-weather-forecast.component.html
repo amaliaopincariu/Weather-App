@@ -1,0 +1,59 @@
+<div class="searchForecast">
+  <div class="searchImg">
+    <input type="text" class="input-text" placeholder="Search..." [(ngModel)]="location" (keydown.Enter)="getWeather()">
+    <span (click)="getWeather()"><img [src]="'assets/search-icon.png'" class="search-img"></span>
+  </div>
+
+  <!-- Current weather -->
+  <div class="curentWeatherCard">
+    <div class="mycurentWeatherCard">
+      <div class="location">{{ currentWeather?.name }} {{ currentWeather?.country }}</div>
+      <div class="tempImg">
+        <span><img [src]="'https://openweathermap.org/img/w/' + currentWeather.icon + '.png'"></span>
+      </div>
+
+        <div class="tempValue">
+        <span>{{ currentWeather?.temp | number:'1.0-0'}}&deg; C</span>
+       </div>
+      <div class="details">
+        <div class="main">{{ currentWeather?.mainDescription }}</div>
+        <div class="sub">{{ currentWeather?.min  | number:'1.0-0'}}&deg; C / {{ currentWeather?.max | number:'1.0-0' }}&deg; C</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hourly weather -->
+  <div class="hourWeatherCard">
+    <div class="itemHours">
+      <div *ngFor="let item of hoursTemp">
+        <div>{{ item.hours }}</div>
+        <div class="itemHours">
+          <span><img [src]="'https://openweathermap.org/img/w/' + item.icon + '.png'"></span>
+            
+        </div>
+        <div class="itemHours"><span>{{ item.temp | number:'1.0-0' }}&deg;C</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="forecastWeatherCard">
+    <div *ngFor="let item of propretyTemp">
+      <div class="itemForecast">{{ item.date | date:"EE" }}</div>
+      <div class="itemForecast">{{ item.date | date:"dd/MM" }}</div>
+      <div class="itemForecast">
+        <span><img [src]="'https://openweathermap.org/img/w/' + item.icon + '.png'"></span>
+    </div>
+        <div class="itemForecast">
+        <span>{{ item.temp | number: '1.0-0' }}&deg; C</span>
+        </div>
+      
+      </div>
+
+  </div>
+ <div class="favoriteCytiListCard">Favorite City
+    <div>
+      <div class="favoritCityCard" *ngFor="let item of cityHistory" >
+        {{ item }}
+      </div>
+    </div>
+  </div>
+</div>

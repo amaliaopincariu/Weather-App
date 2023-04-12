@@ -1,0 +1,218 @@
+/* Default styles */
+*{
+	margin:0px;
+	padding: 0px;
+}
+.location{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: large;
+	padding: 10px;
+	margin: 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tempImg{
+	padding: 20px;
+	margin: 20px;
+}
+
+.mycurrentWeatherCard{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.searchForecast {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.curentWeatherCard {
+	margin: 20px;
+	padding: 20px;
+	border: none;
+}
+
+.forecastWeatherCard {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.hourWeatherCard {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.favoriteCytiListCard{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.favoriteCityCard{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.itemForecast{
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	margin: 20px;
+}
+
+.itemHours{
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	margin: 10px;
+}
+
+.forecastWeatherCard {
+	display: flex;
+    flex-direction: row;
+}
+
+.tempValue{
+	font-size: 50px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main{
+	font-size: 50px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: large;
+	padding: 10px;
+	margin: 10px;
+}
+
+.sub{
+	font-size: 50px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: large;
+	padding: 10px;
+	margin: 10px;
+}
+
+
+/* CSS styles for devices with screen width between 320px and 768px */
+@media screen and (max-width: 768px) {
+	* {
+	  box-sizing: border-box;
+	}
+	
+		.location {
+	  font-size: medium;
+	  padding: 5px;
+	  margin: 5px;
+	}
+  
+	.tempImg {
+	  padding: 10px;
+	  margin: 10px;
+	}
+  
+	.mycurrentWeatherCard {
+	  flex-direction: column;
+	}
+  
+	.searchForecast {
+	  margin: 10px;
+	}
+  
+	.forecastWeatherCard {
+	  flex-direction: column;
+	  align-items: center;
+	  margin: 10px;
+	  padding: 10px;
+	  border: 1px solid #ccc;
+	  border-radius: 5px;
+	}
+  
+	.hourWeatherCard {
+	  flex-direction: column;
+	  align-items: center;
+	  margin: 10px;
+	  padding: 10px;
+	  border: 1px solid #ccc;
+	  border-radius: 5px;
+	}
+  
+	.favoriteCityCard {
+	  flex-direction: column;
+	  align-items: center;
+	  margin: 10px;
+	  padding: 10px;
+	  border: 1px solid #ccc;
+	  border-radius: 5px;
+	}
+  
+	.itemForecast {
+	  flex-direction: column;
+	  padding: 5px;
+	  margin: 10px;
+	}
+  
+	.itemHours {
+	  flex-direction: column;
+	  padding: 5px;
+	  margin: 10px;
+	}
+  
+	.tempValue {
+	  font-size: 30px;
+	  font-weight: 500;
+	  margin-bottom: 5px;
+	}
+  
+	.main {
+	  font-size: medium;
+	  padding: 5px;
+	  margin: 5px;
+	}
+  
+	.sub {
+	  font-size: medium;
+	  padding: 5px;
+	  margin: 5px;
+	}
+  }
+  

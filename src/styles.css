@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+    background-image: url("assets/blue-abstract-background-blue-background-design-abstract-futuristic-background-free-vector.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+  
